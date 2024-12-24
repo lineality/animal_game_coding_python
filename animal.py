@@ -5,6 +5,12 @@ def animal_or_not(animal_done_set):
     Generates three-letter combinations, occasionally picking real animal names.
     Keeps track of which animals have been seen and ensures new selections.
     Returns updated set of seen animals or "All Done!" when complete.
+    
+    Play Ideas:
+    1. teach how code works
+    2. child calls script
+    3. if it is an animal: draw it
+    4. if not, do something else (run in a circle)
     """
     print(animal_done_set)
     # List of three-letter animal names
