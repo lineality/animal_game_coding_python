@@ -12,7 +12,11 @@ def animal_or_not(animal_done_set):
     3. if it is an animal: draw it
     4. if not, do something else (run in a circle)
     """
-    print(animal_done_set)
+    # kludge clear screen
+    print("\n" * 50)  # prints 50 blank lines
+    
+    print(f"So far: {animal_done_set}\n")
+    
     # List of three-letter animal names
     three_letter_animal_names = [
         "pup", "dog", "cat", "rat", "fox",
@@ -33,7 +37,7 @@ def animal_or_not(animal_done_set):
         if available_animals:  # if there are still unseen animals
             word = random.choice(available_animals)
             animal_done_set.add(word)
-            print(word)
+            print(word, "\n")
             return animal_done_set
     
     
@@ -77,7 +81,7 @@ def animal_or_not(animal_done_set):
     if word in three_letter_animal_names:
         animal_done_set.add(word)
             
-    print(word)
+    print(word, "\n")
     
     return animal_done_set
 
